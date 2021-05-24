@@ -16,10 +16,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 130px;
+    height: 140px;
     background: #fff;
     box-shadow: 0 4px 25px -22px black;
-    z-index: 2;
+    z-index: 10;
     position: relative;
 }
 
@@ -132,7 +132,7 @@ menu.nav {
     height: 40px;
     position: absolute;
     right: 20px;
-    top: 16px;
+    top: 6px;
     color: rgb(68, 49, 49);
     font-size: 20px;
     padding: 10px;
@@ -161,20 +161,101 @@ menu.nav {
     align-items: center;
 }
 
-.search-input {
+/* Buscador de contenido icono */
+
+#ctn-icon-search {
+    position: absolute;
+    right: 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctn-icon-search i {
+    font-size: 18px;
+    color: rgb(68, 49, 49);
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+#ctn-icon-search i:hover {
+    color:  rgb(91, 156, 158);
+}
+
+/* Buscador de contenido barra */
+
+#ctn-bars-search {
+    position: fixed;
+    /* top: 140px; */
+    top: -10px;
+    /* lo escondo hacia arriba  con -10*/
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 9 ;
+    transition: all 600ms; 
+}
+
+#ctn-bars-search input {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    font-size: 14px;
+    outline: 0;
     border-radius: 5px;
     border: 1px solid rgb(68, 49, 49);
-    padding: 5%;
+    padding: 1%;
     color: rgb(68, 49, 49);
 }
 
-.search-input:hover {
-    border: 3px solid rgb(91, 156, 158);
+#ctn-bars-search input:hover {
+    border: 2px solid rgb(91, 156, 158);
     transition: color 300ms;
 }
 
-.search-icon {
+#box-search {
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background:rgb(252, 169, 1);
+    z-index: 8;
+    overflow: hidden;
+    /* Esto es para que no se vean los puntitos del li que desbordan del contenedor */
+    display: block;
+}
+
+#box-search li a {
+    display: block;
+    width: 80%;
     color: rgb(68, 49, 49);
+    padding: 18px 20px;
+    font-size: 13px;
+}
+
+#box-search li a:hover {
+    background:  rgba(91, 156, 158, 0.413);
+    color: #fff; 
+    width: 100%;
+}
+
+#box-search li a i {
+    margin-right: 10px;
+}
+
+/* creo un fondo para cuando se despliega mi buscador */
+
+#back-ctn-search {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 7;
+    display: none;
 }
 
 /* main */
@@ -191,7 +272,7 @@ main {
     width: 100%;
     height: 500px;
     position: absolute;
-    top: 150px;
+    top: 220px;
 }
 
 .find-your-favorite {
@@ -211,7 +292,7 @@ main {
     width: 100%;
     height: 250px;
     position: relative;
-    top: 200;
+    top: 300;
     background-image: url(../images/prod.002.jpeg);
     background-position: center;
     background-size: cover;
@@ -224,7 +305,7 @@ main {
     width: 100%;
     height: 400px;
     position: absolute;
-    top: 500px;
+    top: 550px;
 }
 
 .products-title {
@@ -343,16 +424,6 @@ button {
     top: 4000px; 
 }
 
-/* Buscador de contenido */
-
-#ctn-icon-search {
-     position: absolute;
-     right: 20px;
-     height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
 
 /* Footer */
 
