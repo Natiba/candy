@@ -1,0 +1,128 @@
+/* Responsive Design 1200px */
+
+@media screen and (max-width: 1200px) {
+     
+    .header-content1,
+    .header-content2,
+    .container-banner, 
+    .container-products,
+    .allProducts,
+    .products-called,
+    .container-footer footer {
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+} 
+
+/* Responsive Design 1020px */
+
+/* Arreglar esto que es el que deja espacio a la derecha!! */
+
+ @media screen and (max-width: 1020px) {
+
+    .container-products,
+    .allProducts,
+    .products-called {
+        flex-direction: column;
+    }
+
+    .allProducts,
+    .products-called {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+ }
+
+ /* Responsive Design less than 800px */
+
+@media screen and (max-width: 800px) {
+
+
+    .container-all {
+        transition: all 300ms;
+    }
+
+    .move-container-all {
+        transform: translateX(300px);
+    }
+    
+    .menu, .mobile {
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 130px;
+        left: 0;
+        background:rgb(63, 0, 11);
+        
+        overflow: hidden;
+        box-shadow: 10px 0px 20px -25px rgb(241, 229, 175);
+    }
+
+    .mobile1 {
+        font-size: 0.02em;
+        color: rgb(252, 169, 1);
+    }
+
+    .menu .nav1, .nav2 ul {
+        flex-direction: column;
+    }
+
+    .menu .nav1, .nav2 ul li {
+       max-width: 200px;
+       height: 50px;
+       justify-content: flex-start;
+    }
+
+    .menu nav ul li a {
+        color: #fff;
+        margin-top: 40px;
+    }
+
+    .logo h1 {
+        font-size: 16px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    #icon-menu {
+        display: flex;
+    }
+
+    .products img {
+        display: flex;
+       flex-wrap: wrap;
+    }
+
+    /* arreglar esto que es un desastreee!! */
+    .allProducts {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* flex-flow: column wrap; */
+        flex-wrap: wrap;
+        
+        gap: 1em;
+        /* margin: 0 10%; */
+        /* top: 2000px; */
+        padding: 3em;
+    }
+
+    .img-products-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}

@@ -7,7 +7,7 @@ const btnSnak = document.getElementById('snack');
 const btnGalles = document.getElementById('galletita');
 const btnChoco = document.getElementById('chocolate');
 const btnChupetin = document.getElementById('chupetin');
-console.log(btnSnak);
+
 
 btnChocolate.addEventListener('click', () => {
   getProducts('chocolate');

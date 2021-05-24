@@ -19,6 +19,7 @@
     <!-- aca linkeo a css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/carrito.css" />
+    <link rel="stylesheet" href="./assets/css/media.css">
   </head>
 
   <body>
@@ -37,7 +38,7 @@
                 >
               </li></span
             >
-            <li>FREE 1-3 DAYS DELIVERY ON ORDERS OVER $300-</li>
+            <span class="mobile1"><li>FREE 1-3 DAYS DELIVERY ON ORDERS OVER $300-</li></span>
             <span class="mobile"
               ><li>
                 <a href=""><i class="far fa-user-circle nav1-icon"></i></a>
@@ -75,10 +76,9 @@
           </nav>
         </div>
 
-        <div class="search">
-          <input type="search" placeholder="  SEARCH" class="search-input" /><i
-            class="fas fa-search fa-2x search-icon"
-          ></i>
+        <!-- Buscador Search -->
+        <div class="search" id="ctn-icon-search">
+          <i class="fas fa-search fa-2x search-icon" id="icon-search"></i>
         </div>
       </div>
 
@@ -88,6 +88,44 @@
       </div>
     </header>
 
+    <!-- Buscador Search barra desplegabe -->
+
+    <div id="ctn-bars-search">
+      <input type="text" placeholder="  SEARCH" id="inputSearch" />
+    </div>
+
+    <ul id="box-search">
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>HTML</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>ALFAJORES</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>CHUPETINES</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>GALLETITAS</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>CHOCOLATES</a>
+      </li>
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>CHICLES</a>
+      </li>  
+      <li>
+        <a href="#"><i class="fas fa-search fa-2x search-icon"></i>SNACKS</a>
+      </li> 
+    </ul>
+
+    <!-- Creo la barra desplegable del buscador -->
+
+    <div id="bar-ctn-search">
+
+    </div>
+
+
+    <!-- Genero un contenedor de todo el contenido, para poder moverlo a un lado cuando es mobile, asi baja el desplegable.  Lo hago desde js en menu.js -->
     <div class="container-all" id="move-content">
       <main role="main">
         <!-- Banner estatico o Carroussel  -->
@@ -112,27 +150,27 @@
 
             <div class="img-products-container">
               <div class="alfajor-img">
-                <img src="./assets/images/PRODUCTS.01.jpeg" alt="" />
+                <img src="./assets/images/PRODUCTS.01.jpeg" alt="Alfajor" />
               </div>
 
               <div class="chupetin-img">
-                <img src="./assets/images/PRODUCTS.02.jpeg" alt="" />
+                <img src="./assets/images/PRODUCTS.02.jpeg" alt="Chupetin" />
               </div>
 
               <div class="galletitas-img">
-                <img src="./assets/images/PRODUCTS.003.jpeg" alt="" />
+                <img src="./assets/images/PRODUCTS.003.jpeg" alt="Galletitas" />
               </div>
 
               <div class="chocolate-img">
-                <img src="./assets/images/PRODUCTS.04.jpeg" alt="" />
+                <img src="./assets/images/PRODUCTS.04.jpeg" alt="Chocolates" />
               </div>
 
               <div class="chicle-img">
-                <img src="./assets/images/PRODUCTS.05.jpeg" alt="" />
+                <img src="./assets/images/PRODUCTS.05.jpeg" alt="Chicles" />
               </div>
 
               <div class="snack-img">
-                <img src="./assets/images/PRODUCTS.06.jpeg" alt="" />
+                <img src="./assets/images/PRODUCTS.06.jpeg" alt="Snacks" />
               </div>
             </div>
 
@@ -181,11 +219,11 @@
       <div class="container-footer">
         <footer>
           <div class="logo-footer">
-              <div class="logo-footer-circle">
-                <p>the</p>
-                <p>DRUG<b>STORE</b></p>
-                <p>co.</p>
-              </div>
+            <div class="logo-footer-circle">
+              <p>the</p>
+              <p>DRUG<b>STORE</b></p>
+              <p>co.</p>
+            </div>
             <!-- ver si ponemos un logo!! -->
           </div>
 
