@@ -2,18 +2,30 @@ import products from './db.js';
 
 const container = document.getElementById('container'); //cambio promo x container!!
 const btnChocolate = document.getElementById('chocolate');
-const btnchicle = document.getElementById('chicle');
+const btnChicle = document.getElementById('chicle');
 const btnSnak = document.getElementById('snack');
+const btnGalles = document.getElementById('galletita');
+const btnChoco = document.getElementById('chocolate');
+const btnChupetin = document.getElementById('chupetin');
 console.log(btnSnak);
 
 btnChocolate.addEventListener('click', () => {
   getProducts('chocolate');
 });
-btnchicle.addEventListener('click', () => {
+btnChicle.addEventListener('click', () => {
   getProducts('chicle');
 });
 btnSnak.addEventListener('click', () => {
-  getProducts('snacks');
+  getProducts('snack');
+});
+btnGalles.addEventListener('click', () => {
+  getProducts('galletita');
+});
+btnChoco.addEventListener('click', () => {
+  getProducts('chocolate');
+});
+btnChupetin.addEventListener('click', () => {
+  getProducts('chupetin');
 });
 
 const getProducts = (categoria) => {
@@ -78,8 +90,3 @@ const getProducts = (categoria) => {
   });
 };
 
-// No necesitas Javascript para que esto funcione. Pero creo que una cosa que sí te vendría bien es que, al pulsar sobre el <div>, lleves el foco de la aplicación dentro del campo input.
-
-// document.querySelector('.input-icono').addEventListener('click', function() {
-//     this.querySelector('input').focus();
-// });
