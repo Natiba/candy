@@ -29,6 +29,9 @@ function show_search() {
 ctnBarsSearch.style.top = '140px'; //para que baje xq lo tengo escondido arriba 
 backCtnSearch.style.display = 'block'; //para que aparezca el fondo translucido negro
 inputSearch.focus(); //para que funcione la barra al tipear
+if (inputSearch.value === '') {
+    boxSearch.style.display = 'none'; 
+}
 
 }
 
@@ -39,6 +42,7 @@ function hide_search() {
     ctnBarsSearch.style.top = '-10px'; //para que suba y lo esconda nuevamente arriba 
     backCtnSearch.style.display = 'none'; //para que tambien se oculte el fondo translucido
     inputSearch.value = '';  //esto es para que el valor del input quede vacio al volver a abrir el buscador 
+    box_search.style.display = 'none';
 }
 
 // Creando filtrado de busqueda:
@@ -47,7 +51,7 @@ document.getElementById('inputSearch').addEventListener('keyup', internal_search
 
 function internal_search() {
 
-inputSearch.value = toUpperCase();
+filter = inputSearch.value. toUpperCase();
 li = boxSearch.getElementsByTagName('li');
 
 //Recorriendo elementos a filtrar mediante los li
@@ -59,9 +63,16 @@ for(i = 0; i < li.lenght; i++) {
      
     if(textValue.toUpperCase().indexOf(filter) > -1) {
 
-    li[i].display ='';
+    li[i].style.display = '';
+    boxSearch.style.display = 'block';
+   }
+   if (inputSearch.value === '') {
+       boxSearch.style.display = 'none'; 
+   }
+     else {
+         li[i].style.display = 'none';
+     }
 
-    }
 }
 
 } 

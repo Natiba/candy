@@ -225,7 +225,7 @@ menu.nav {
     z-index: 8;
     overflow: hidden;
     /* Esto es para que no se vean los puntitos del li que desbordan del contenedor */
-    display: block;
+    display: none;
 }
 
 #box-search li a {
