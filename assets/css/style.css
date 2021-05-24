@@ -55,10 +55,15 @@ header {
     font-size: 18px;
 }
 
+.nav1 ul li a {
+    color: #fff;
+    margin-right: 8px;
+}
+
 .nav1-icon {
     color: #fff;
     margin-right: 3%;
-    /* me falta separar el logo del texto!! */
+
 }
 
 /* todo para el navegador 2 */
