@@ -1,0 +1,38 @@
+/* Carrito de compras!! */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+body {
+    background-color: #fff; 
+}
+
+.titulo1{
+    text-align: center;
+    font-size: 3rem;
+    color: blue;
+    text-decoration: underline;
+}
+​
+.titulo{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+​
+.boton{
+    display: flex;
+}
+.boton2{
+    display: flex;
+}
+/* .forma-de-pago{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row: 1/3;
+} */

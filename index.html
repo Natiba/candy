@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drugstore Co.</title>
+    <!-- aca linkeo a font-awesome -->
+    <script
+      src="https://kit.fontawesome.com/9c540da863.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- aca linkeo a google fonts source sans pro-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- aca linkeo a css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/carrito.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content1">
+        <!-- nav superior -->
+        <nav class="nav1" id="nav1">
+          <ul id="shop">
+            <li>
+              <a href="https://www.sweetpetescandy.com/collections/shop"></a
+              >theDRUGSTOREcompany.COM
+            </li>
+            <li>FREE 1-3 DAYS DELIVERY ON ORDERS OVER $300-</li>
+            <li>
+              <a href=""><i class="far fa-user-circle nav1-icon"></i></a>
+              LOGIN/REGISTER
+            </li>
+            <li>
+              <a href=""><i class="far fa-heart nav1-icon"></i></a> WISH LIST
+            </li>
+            <li>
+              <a href="./assets/carrito.html"
+                ><i class="fas fa-shopping-cart icon-color nav1-icon"></i></a
+              >MY CART
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- nav principal -->
+      <div class="header-content2">
+
+        <div class="logo" id="logo">
+          <h1>The DRUG<b>STORE</b> Company</h1>
+        </div>
+
+         <div class="menu">
+           <nav class="nav2" id="nav2">
+             <ul>
+               <li><a href="#">Gifts</a></li>
+               <li><a href="#products">Candy Types</a></li>
+               <li><a href="#brands">Brands</a></li>
+               <li><a href="#">Sale</a></li>
+             </ul>
+           </nav>
+         </div>
+
+        <div class="search">
+            <input type="search" placeholder="  SEARCH"     class="search-input" /><i
+            class="fas fa-search fa-2x search-icon"
+            ></i>
+        </div>
+      </div> 
+
+      <!-- pego el icono de menu hamburguesa -->
+      <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+
+    </header>
+
+    <main role="main">
+      <!-- Banner estatico o Carroussel  -->
+
+      <section class="banner">
+        <div class="container-banner">
+          <div class="find-your-favorite">
+            <h1>FIND YOUR FAVOURITE</h1>
+          </div>
+
+          <div class="banner-img">
+            <!-- la imagen la coloco desde css -->
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container-products">
+          <div class="products-title">
+            <h2>Our Products</h2>
+          </div>
+
+          <div class="shop-link">
+            <a href="./assets/html/shop-all.html">SHOP ALL</a>
+          </div>
+
+          <div id="allProducts" class="allProducts">
+            <div class="alfajor">
+              <button id="alfajor">Alfajores</button>
+            </div>
+            <div class="chupetin">
+              <div class="chupetin-img">
+                <!-- <img src="./assets/images/paleta.jpeg" alt="">  -->
+              </div>
+              <button id="chupetin">Chupetines</button>
+            </div>
+            <div class="galletita">
+              <button id="galletita">Galletitas</button>
+            </div>
+            <div class="chocolate">
+              <button id="chocolate">Chocolates</button>
+            </div>
+            <div class="chicle">
+              <button id="chicle">Chicles</button>
+            </div>
+            <div class="snack">
+              <button id="snack">Snacks</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="products-called">
+        <div class="container" id="container">
+          <!-- <img src="https://www.zanettigolosinas.com.ar/wp-content/uploads/2021/04/77905741.jpg" alt="" id="1" />
+        <h2 class="titulo">Alfajor Jorgito Negro</h2>
+        <p>Precio: $100-</p>
+        <p>Disponibilidad: En stock</p>
+        <p>Disponibilidad: Sin stock</p>
+        <div>
+          <label for="quantity">Cantidad:</label>
+          <input type="text" id="quantity" class="quantity">
+          <input type="submit" value="Añadir al carrito" id="quantity-btn"> -->
+        </div>
+      </section>
+    </main>
+
+    <div class="container-footer">
+      <footer>
+        <div class="logo-footer">
+          <!-- ver si ponemos un logo!! -->
+        </div>
+
+        <div class="redes-footer">
+          
+            <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+              ><i
+                class="fab fa-instagram iconos fa icon-color icon-redes-footer ig"
+              ></i
+            ></a>
+            <a href="https://twitter.com/?lang=es" target="_blank"
+              ><i class="fab fa-twitter fa icon-color icon-redes-footer tw"></i>
+            </a>
+          
+            <a href="https://es-la.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook-f icon-color icon-redes-footer"></i
+            ></a>
+
+         </div>
+
+        <hr />
+        <h4>© 2021— The DrugStore Company DO NOT SELL MY INFO</h4>
+      </footer>
+    </div>
+
+    <script src="./assets/js/index.js" type="module"></script>
+    <!-- <script src="./assets/js/carrito.js"></script> -->
+  </body>
+</html>
