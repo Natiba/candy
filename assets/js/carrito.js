@@ -22,5 +22,5 @@ send.addEventListener('click', () => {
     localStorage.setItem('direccion', direccion.value);
     localStorage.setItem('email', email.value);
     localStorage.setItem('telefono', telefono.value);
-    window.location.href = './carrito2.html'
+    window.location.href = './assets/html/carrito2.html'
 })

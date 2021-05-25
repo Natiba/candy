@@ -1,7 +1,8 @@
 document.getElementById('icon-menu').addEventListener('click', mostrar_menu);
 
 function mostrar_menu() {
-    document.getElementById('move-content').classList.toggle('move-container-all')
+    document.getElementById('move-content').classList.toggle('move-container-all');
+    document.getElementById('show-menu').classList.toggle('show-menu-lateral');
 }
 
 
@@ -18,7 +19,7 @@ document.getElementById('back-ctn-search').addEventListener('click', hide_search
 
 let ctnBarsSearch = document.getElementById('ctn-bars-search');
 let backCtnSearch = document.getElementById('back-ctn-search');
- let inputSearch = document.getElementById('inputSearch');
+ let inputSearch = document.getElementById('input-search');
  console.log(inputSearch);
 let boxSearch = document.getElementById('box-search');
 
